@@ -80,24 +80,24 @@ const Form = ({ addUser }) => {
             <h1><strong>Create New User</strong></h1>
 
             <label htmlFor="user-name" >Name :</label>
-            <input id="user-name" type="text" name="name" value={user.name} onChange={changeHandler} />
-            <span>{error.name}</span>
+            <input id="user-name" type="text" name="name" value={user.name} onChange={changeHandler} data-cy="name" />
+            <span data-cy="error">{error.name}</span>
 
-            <label htmlFor="user-email" >E-mail :</label>
-            <input id="user-email" type="email" name="email" value={user.email} onChange={changeHandler} />
-            <span>{error.email}</span>
+            <label htmlFor="user-email"  >E-mail :</label>
+            <input id="user-email" type="email" name="email" value={user.email} onChange={changeHandler} data-cy="email" />
+            <span data-cy="error">{error.email}</span>
 
             <label htmlFor="user-password" >Password :</label>
-            <input id="user-password" type="password" name="password" value={user.password} onChange={changeHandler} />
-            <span>{error.password}</span>
+            <input id="user-password" type="password" name="password" value={user.password} onChange={changeHandler} data-cy="password" />
+            <span data-cy="error">{error.password}</span>
 
             <div>
                 <label htmlFor="user-terms" >Terms of Services</label>
-                <input id="user-terms" type="checkbox" name="terms" checked={user.terms} onChange={changeHandler} />
+                <input id="user-terms" type="checkbox" name="terms" checked={user.terms} onChange={changeHandler} data-cy="terms" />
             </div>
-            <span>{error.terms}</span>
+            <span data-cy="error">{error.terms}</span>
 
-            <button disabled={!isValid} >Submit</button>
+            <button disabled={!isValid} data-cy="submit_button">Submit</button>
         </form>
     );
 };
