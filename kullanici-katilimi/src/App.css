@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+}
+
+.userForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: rgba(128, 128, 128, 0.801);
+  padding: 2rem;
+  padding-top: 0;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  row-gap: .5rem;
+}
+
+input {
+  border-radius: .5rem;
+  line-height: 1.5rem;
+}
+
+form>button {
+  width: 50%;
+  margin: auto;
+}
+
+form span {
+  background-color: bisque;
+  border-radius: .5rem;
+  color: rgb(167, 0, 0);
+}
